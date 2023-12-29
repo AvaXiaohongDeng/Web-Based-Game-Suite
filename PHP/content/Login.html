@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login Page</title>
+		<link rel="stylesheet" href="../css/forms.css">
+		<link rel="stylesheet" href="../css/main.css">
+		
+		<!--
+		Author: 			Xiaohong Deng
+		Program: 		  Login.html		
+		Date:					2019 06 21
+		Updated:
+		Version: 			1.0		
+		Description:	Login page of the whole web project. The main content consists of a form to allow user to enter their credentials and either submit or cancel the request.  
+		-->		
+  </head><!-- head -->	
+  <body>
+		
+		<nav>
+			<a href="../index.html">Home</a>
+			<a class="itself" href="Login.html">Login</a>
+			<a href="Register.html">Register</a>
+			
+		</nav><!-- navigation lane -->
+		<main>
+			<form class="login-form" action="/action_page.php">
+				
+				<label><strong>Enter Username</strong></label>
+				<br>
+				<!--Formatting the width of the <input> element cannot be realized by using the size attribute. It may be improved by CSS later--> 
+				<input type="text" placeholder="Enter your username(required)" required >
+				<br><br>
+				<label><strong>Enter Password</strong></label>
+				<br>
+				<!--Formatting the width of the <input> element cannot be realized by using the size attribute. It may be improved by CSS later--> 
+				<input type="text" placeholder="Enter your Password(required)" required>
+				<br><br>				
+				<input class="button" type="submit" value="Login">  
+				<br><br>
+				<input class="button" type="reset" value="Reset"> 
+				
+			</form>
+		</main><!-- main content -->		
+  </body><!-- body -->
+</html>

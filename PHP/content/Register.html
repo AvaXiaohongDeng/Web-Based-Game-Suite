@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration Page</title>
+		<link rel="stylesheet" href="../css/forms.css">
+		
+		
+
+		<!--
+		Author: 			Xiaohong Deng
+		Program: 		  Register.html		
+		Date:					2019 06 21
+		Updated:
+		Version: 			1.0		
+		Description:	Registration page of the whole web project. The main content consists of a form to allow user to create an account. Include ALL fields and labels in the image, including the field sets.
+		-->
+  </head><!-- head -->	
+  <body>
+		
+		<nav>
+			<a href="../index.html">Home</a>
+			<a href="Login.html">Login</a>
+			<a class="itself" href="Register.html">Register</a>
+			
+		</nav><!-- navigation lane -->
+		<main>		
+			<form class="register-form" action="/action_page.php">
+				<input type="text" style="width:49.5%" placeholder="First Name(required)" required >
+				<input type="text" style="width:49.5%" placeholder="Last Name(required)" required >
+				<br>
+				Gender: <input type="radio" name="gender" value="Male" checked> Male  <input type="radio" name="gender" value="Female"> Female 
+				<br>
+				<input type="text" style="width:49.5%" placeholder="Email(required)" required >
+				<input type="text" style="width:49.5%" placeholder="Phone(required)" required >
+				<br>
+				<input type="text" placeholder="Enter your address">
+				<br>
+				<fieldset>
+					<legend>Choose a username and a password</legend>
+					<br>
+					<input type="text" placeholder="Enter your user name">
+					<br>
+					<input type="text" placeholder="Enter your password">
+					<br>
+					<input type="text" placeholder="Confirm your password">
+					<br>
+				</fieldset>
+				<br>			
+				<input class="button" type="submit" value="Submit"> 			
+      </form>
+		</main><!-- main content -->			
+  </body><!-- body -->
+</html>

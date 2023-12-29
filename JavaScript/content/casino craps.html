@@ -1,0 +1,99 @@
+<!DOCTYPE html>	
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CATsino Craps</title>		
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/cats.css">
+		<link href="http://bajcar.dev.fast.sheridanc.on.ca/syst10199/checklists/css/grid_2019_6_4.css" rel="stylesheet">
+		<script src="../js/games.js"> </script>
+		<style>
+		</style>		
+		<!--
+		Author: 			Xiaohong Deng
+		Program: 		  casino craps.html		
+		Date:	
+		Updated:
+		Version: 			1.0
+		Purpose: 			short description what the page is all about
+		Citations:    [1] {url}, Course Material, SYST10199, Spring 2019
+									[2] {url} or APA format...
+		Description:	describe the solution in detail-focus on the "why"
+									Home page of the whole web project
+		-->
+  </head><!-- head -->
+  <body>
+    <header>
+			<h1>Gaming Cat's Clubhouse</h1>	
+			<hr>			
+		</header><!-- header -->
+		<!--NavigationBar -->
+		<div class="flex-casino1">
+			<div class="column" style="order: 1; flex-grow: 1">
+				<nav>
+					<button><a href="../index.html">HOME</a></button>
+					<button><a href="tic cat toe.html">Tic CAT Toe</a></button>
+					<button><a href="casino craps.html">CATsino Craps</a></button>
+					<button><a href="cat paper rock.html">CAT Paper Rock</a></button>
+					<button><a href="cat scrabble.html">CAT Scrabble</a></button>
+				</nav>
+			</div>
+			<div class="column" style="order: 2; flex-grow: 3">
+				<main>
+					<h2>Play &mdash; Casino Craps</h2>
+
+					<div class="grid-container">
+						<div class="grid-item board">
+										<table style="width: 65%">
+												<tr>
+														<td class="nothing"></td>
+														<td id="alpha" class="dice"></td>
+														<td id="bravo" class="dice"></td>
+												</tr>
+										</table>                     
+										<p>
+												<small>You rolled&hellip;</small>            
+												<samp id="total" style="font-size:48px"></samp>
+										</p>     
+										<button type="button" id="roll" class="roll">Roll the dice!</button>	
+										
+						</div>
+						<div class="grid-item">
+										<button id="clear" class="roll">Reset game</button>	                    
+										<p>
+												Wins: <span id="wins">0</span>
+												&nbsp;&nbsp;&nbsp;Losses: <span id="losses">0</span>
+										</p>
+										<h2 id="reset" class="show">Start the game by pressing "Roll the dice"!<br></h2>
+								</div>
+					</div>			
+				</main>			
+			</div>
+				<div class="column" style="order: 3; flex-grow: 1">
+				<aside>
+					<ul>How to play
+						<li>Press the button "Roll the dice" and the computer shows the total. After 5 turns, it presents your winns and loses.</li>
+						<li>First turn</li>
+						<li>if the total is 2,3 or 12, the players loses.</li>
+						<li>if the total is 7 or 11, the players wins.</li>
+						<li>if the total is 4,5,6,8,9 or 10, that number becomes the "point".</li>
+						<li>Roll again! the total is same as the point, the player wins, otherwise loses.</li>
+						<li>Next turn</li>
+						<li>Game over after 5 turns</li>
+
+					</ul>
+				</aside>
+			</div>
+		</div>	
+		<footer>
+			<address>
+				Dengxiao, SYST10199 Web Programming,Summer 2019 @ Sheridan College
+			</address>		
+		</footer><!-- footer -->
+		<script>
+			document.addEventListener("DOMContentLoaded", casinocraps);
+		</script>
+
+  </body><!-- body -->
+</html>

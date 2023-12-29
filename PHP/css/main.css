@@ -1,0 +1,328 @@
+/*
+		Author: 			Xiaohong Deng
+		Program: 		  main.css		
+		Date:					2019 08 09
+		Updated:
+		Version: 			1.0
+		Purpose: 			short description what the page is all about
+		Citations:    [1] {url}, Course Material, SYST10199, Spring 2019
+									[2] url('https://fonts.googleapis.com/css?family=Akronim|Asap+Condensed|Luckiest+Guy');
+		Description:	describe the solution in detail-focus on the "why"
+									Home page of the whole web project
+*/
+
+/* style the root for all pages */ 
+:root {
+--bgwhite: #fff;
+--sherblue: #093D6D;
+--sherteal: #1AC6D9;
+--sherorange: #ff5C10;
+--fontfam: 'Luckiest Guy', cursive;
+--fontbody: 'Asap Condensed', sans-serif;
+--fonttitle: 'Akronim', cursive;
+--gap-sm: 5px;
+--gap-md: 10px;
+--gap-lg: 25px;
+}
+
+main {
+	width: 100%;
+	min-width: 1080px;
+}
+
+.dice{		
+    width: 68px;		
+	 	height:68px;
+    float: center;
+    background-color: #ff5C10;
+    border: 2px solid white;	
+  	outline: 1px white outset;   
+    font-size: 48px;
+		color: white;
+    text-align: center;		
+    margin: 10px 100px 5px 100px;
+		padding: 10px;
+    border-radius: 5px;
+}
+
+
+body {
+background-image: url('../images/sher_lightb.jpg');
+background-repeat: repeat;
+font-family: var(--fontbody);
+}
+
+@media screen and (max-width: 900px) {
+  .flex-container, .flex-casino1, .flex-tic1, .flex-paper1, .flex-scrabble1 {
+  flex-direction: row;	
+}
+}
+
+main, nav, aside {
+background-color: var(--bgwhite);
+padding: var(--gap-sm);
+position: relative;
+}
+
+
+.flex-container {
+	flex-direction: row;	
+}
+
+.flex-container, .flex-casino1, .flex-tic1, .flex-paper1, .flex-scrabble1{
+  display: flex;  
+  min-height: 400px;
+	background-color: white;
+	padding-bottom:10px;
+	flex-direction: row;
+ justify-content: center;	
+}
+
+header h1 {
+color: var(--sherblue);
+font-family: var(--fonttitle);
+font-size: 7vw; 
+text-shadow: 1px 1px 2px var(--sherorange), 3px 3px 4px var(--bgwhite);
+}
+
+header {
+border-bottom: 27px solid var(--sherblue);
+padding: 10px;
+text-align: center;
+}
+
+footer {
+border-top: 7px solid ;
+color: var(--sherblue);
+padding-top: var(--gap-sm);
+text-align: center;
+}
+
+/*
+In this section, styling navigation
+    nav
+    a
+    .active
+    nav button
+    nav button:hover
+    nav button.lined.thin
+    nav button.dotted.thin
+    nav button.dashed.thin
+*/
+nav {
+    text-align: center;
+}
+a {
+  text-decoration: none;  
+	text-transform: capitalize;
+	font-variant: small-caps;
+	
+}
+.active {
+    color: var(--sherorange);
+}
+nav button {
+  align-self: left;
+  background: transparent;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  min-width: 100px;
+  transition: all .5s ease;
+  color: #093D6D;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  
+}
+nav button:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  background-color: #FFF5DC;
+}
+nav button.lined.thin {
+  border: solid 2px var(--sherorange);  
+  transform: rotate(-6deg);
+}
+nav button.dotted.thin {
+  border: dotted 2px var(--sherorange);  
+  transform: rotate(3deg);
+}
+nav button.dashed.thin {
+  border: dashed 2px var(--sherorange);
+}
+
+/* the images of cats are positioned relative to the parent element */
+img{
+position: absolute;
+}
+
+.one {
+top: -60px;
+left: -20px;
+z-index: 9;
+}
+.two {
+top: -5px;
+left: -90px;
+z-index: 9;
+}
+.three {
+top: 310px;
+left: -20px;
+z-index: 9;
+}
+.four {
+top: 310px;
+left: 8px;
+z-index: 8;
+}
+.five {
+top: 275px;
+left: 120px;
+z-index: 9;
+}
+.six {
+top: 285px;
+left: 700px;
+z-index: 9;
+}
+
+
+@media screen and (max-width: 900px) {
+  .one {
+		top: -450px;
+		left: 150px;
+		width: 15%;
+		height: 15%;
+	}
+	.two {
+		top: -405px;
+		left: 90px;
+		width: 15%;
+		height: 25%;
+	}
+		.three {
+		top: 610px;
+		left: 100px;
+		width: 10%;
+		height: 30%;
+	}
+		.four {
+		top: 608px;
+		left: 130px;
+		width: 10%;
+		height: 25%;
+	}
+		.five {
+		top: 605px;
+		left: 280px;
+		width: 15%;
+		height: 25%;
+	}
+		.six {
+		top: 605px;
+		left: 500px;
+		width: 15%;
+		height: 25%;
+	}
+}
+
+/*
+In this section, styling forms */
+label {
+    display: black;
+    width: 100%;
+}
+
+form footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+form footer input {
+    margin-right: 25px;
+    width: 80px;
+}
+
+form footer span {
+    font-weight: bold; 
+    display: inline-block;
+		text-align: right;
+    padding-left: 5px;
+}
+
+input[type=text], input[type=password],
+input[type=email], input[type=tel] {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+.button, input {
+    padding: 0.5em;
+    margin-bottom: 0.4375em;
+} 
+
+.button{
+    background-color: #f0834f;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    border: 0 solid white;
+}
+
+.button:hover{
+    background-color: #BE8131;
+}
+
+a {
+    text-decoration: none;
+    color: #59A622;
+}
+
+input[type="submit"], input[type="reset"], .button1{
+    width: 100%;
+}
+
+
+ .login-form, .register-form {
+    padding: 8px;
+    width: 50%;
+    margin: 5px auto;
+}
+
+fieldset {
+    border: 1px solid lightgray;
+    margin: 0;
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+select {
+    height: 2.5em;
+    width: 100%;
+    background-color: snow;
+    margin-bottom: 10px;
+}
+
+option {
+    color: blue;
+} 
+
+a {
+	text-align:center;
+	background-color:transparent;;
+	color:blue;
+}	
+
+.navButton {
+	width:80px;
+	height:60px;
+}
+
+

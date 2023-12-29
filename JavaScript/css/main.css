@@ -1,0 +1,141 @@
+/*
+		Author: 			Xiaohong Deng
+		Program: 		  template.css		
+		Date:	
+		Updated:
+		Version: 			1.0
+		Purpose: 			short description what the page is all about
+		Citations:    [1] {url}, Course Material, SYST10199, Spring 2019
+									[2] url('https://fonts.googleapis.com/css?family=Akronim|Asap+Condensed|Luckiest+Guy');
+		Description:	describe the solution in detail-focus on the "why"
+									Home page of the whole web project
+*/
+ 
+:root {
+--bgwhite: #fff;
+--sherblue: #093D6D;
+--sherteal: #1AC6D9;
+--sherorange: #ff5C10;
+--fontfam: 'Luckiest Guy', cursive;
+--fontbody: 'Asap Condensed', sans-serif;
+--fonttitle: 'Akronim', cursive;
+--gap-sm: 5px;
+--gap-md: 10px;
+--gap-lg: 25px;
+}
+
+html, body, main, nav, header, footer, aside, h1,.flex-container, .flex-casino1, .flex-tic1, .flex-paper1, .flex-scrabble1 {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+display: block;
+}
+body {
+background-image: url('../images/sher_lightb.jpg');
+background-repeat: repeat;
+font-family: var(--fontbody);
+}
+/* position needs to be non-static to allow the positioning of the images relative to its paren */
+main, nav, aside {
+background-color: var(--bgwhite);
+padding: var(--gap-sm);
+position: relative;
+}
+footer {
+border-top: 7px solid ;
+color: var(--sherblue);
+padding-top: var(--gap-sm);
+text-align: center;
+}
+header {
+border-bottom: 27px solid var(--sherblue);
+padding: 10px;
+text-align: center;
+}
+/* major heading for the project on all pages */
+header h1 {
+color: var(--sherblue);
+font-family: var(--fonttitle);
+font-size: 7vw; /* check out the vw units */
+text-shadow: 1px 1px 2px var(--sherorange), 3px 3px 4px var(--bgwhite);
+}
+
+aside {
+padding-right: 15px;
+text-align: justify;
+overflow-y: scroll;
+max-height: 400px;
+width: 100%;
+}
+
+/* used (class, not element) for headings in the <aside> element */
+aside .h4 {
+text-align: left;
+font-size: 1.2em;
+font-weight: 700;
+margin: 1em 0 0 0;
+}
+.flex-container, .flex-casino1, .flex-tic1, .flex-paper1, .flex-scrabble1{
+  display: flex;  
+  min-height: 400px;
+	background-color: white;
+	padding-bottom:10px;	
+}
+
+nav {
+	width: 18%;
+}
+
+aside {
+	width: 100%;
+}
+
+main {
+	width: 100%;
+	min-width: 800px;
+}
+
+@media screen and (min-width: 900px) {
+	.flex-container, .flex-casino1, .flex-tic1, .flex-paper1, .flex-scrabble1 {
+  flex-direction: row;	
+}
+}
+
+
+@media screen and (max-width: 900px) {
+  .flex-container, .flex-casino1, .flex-tic1, .flex-paper1, .flex-scrabble1 {
+  flex-direction: column;	
+}
+}
+
+.button1{
+	position:relative;
+	top:28px;
+	right:-30%;
+}
+
+.gallery dt .image-paper{	
+	width:48px; 
+	height:48px; 
+	margin: auto;
+	position: relative;
+}
+
+.dice{		
+    width: 48px;		
+	 	height:48px;
+    float: center;
+    background-color: #ff5C10;
+    border: 2px solid white;	
+  	outline: 1px white outset;   
+    font-size: 48px;
+		color: white;
+    text-align: center;		
+    margin: 10px 100px 5px 100px;
+		padding: 10px;
+    border-radius: 5px;
+}
+
+#play-area img {
+		position: relative;
+}

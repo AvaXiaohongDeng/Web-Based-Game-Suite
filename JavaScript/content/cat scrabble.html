@@ -1,0 +1,129 @@
+<!DOCTYPE html>	
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CAT Scrabble</title>		
+		<link rel="stylesheet" href="../css/cats.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link href="http://bajcar.dev.fast.sheridanc.on.ca/syst10199/checklists/css/grid_2019_6_4.css" rel="stylesheet">
+		<script src="../js/games.js"> </script>
+		<style>
+			table {
+			margin-top:-10%;
+			margin-left:20%;
+			}
+			tr, td {
+				border: 30px solid white;
+			}
+		</style>
+	
+		<!--
+		Author: 			Xiaohong Deng
+		Program: 		  cat scrabble.html		
+		Date:	
+		Updated:
+		Version: 			1.0
+		Purpose: 			short description what the page is all about
+		Citations:    [1] {url}, Course Material, SYST10199, Spring 2019
+									[2] {url} or APA format...
+		Description:	describe the solution in detail-focus on the "why"
+									Home page of the whole web project
+		-->
+  </head><!-- head -->
+  <body>
+    <header>
+			<h1>Gaming Cat's Clubhouse</h1>	
+			<hr>			
+		</header><!-- header -->
+		<!--NavigationBar -->
+		<div class="flex-scrabble1">
+			<div class="column" style="order: 1; flex-grow: 1">
+				<nav>
+					<nav>
+					<button><a href="../index.html">HOME</a></button>
+					<button><a href="tic cat toe.html">Tic CAT Toe</a></button>
+					<button><a href="casino craps.html">CATsino Craps</a></button>
+					<button><a href="cat paper rock.html">CAT Paper Rock</a></button>
+					<button><a href="cat scrabble.html">CAT Scrabble</a></button>
+				</nav>
+				</nav>
+			</div>
+			<div class="column" style="order: 2; flex-grow: 3">
+				<main>   
+					<h2>Play &mdash; CAT Scrabble</h2>
+					<div class="grid-container">
+						<div class="grid-item" id="play-area">
+							<table class="scrabble">
+								<tr>
+									<td id="b11">1</td>
+									<td id="b12">2</td>
+									<td id="b13">3</td>
+								</tr>
+								<br>
+								<tr>
+									<td id="b21">4</td>
+									<td id="b22">5</td>
+									<td id="b23">6</td>
+								</tr>  
+								<br>
+								<tr>
+									<td id="b31">7</td>
+									<td id="b32">8</td>
+									<td id="b33">9</td>
+								</tr>     
+							</table>
+							
+								
+							<img src="../images/1.png" id="one" width="60" draggable="true" alt="1">
+							<img src="../images/2.png" id="two" width="60" draggable="true" alt="2">
+							<img src="../images/3.png" id="three" width="60" draggable="true" alt="3">
+							
+					
+							<img src="../images/4.png" id="four" width="60" draggable="true" alt="4">
+							<img src="../images/5.png" id="five" width="60" draggable="true" alt="5">
+							<img src="../images/6.png" id="six" width="60" draggable="true" alt="6">
+							 
+							
+						
+							<img src="../images/7.png" id="seven" width="60" draggable="true" alt="7">
+							<img src="../images/8.png" id="eight" width="60" draggable="true" alt="8">
+							<img src="../images/9.png" id="nine" width="60" draggable="true" alt="9">
+								   
+							
+
+							</div>
+							<div class="grid-item">
+								<dl>
+									<dt><button id="gameReset">Click To Start Over</button></dt>    
+									<dd id="out0"></dd>
+									<dd id="out"></dd>
+									<dt><h3>Endgame Board State</h3></dt>
+									<dd id="out2"></dd>  
+								</dl>                  
+							</div>
+						</div>
+				</main>
+			</div>
+			<div class="column" style="order: 3; flex-grow: 1">
+				<aside>
+					<ul>How to play
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu sapien quam. Duis molestie urna vel libero pulvinar eleifend. Etiam molestie mi at nulla consequat, sed sollicitudin ante laoreet. Nunc.</p>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula id ante blandit placerat in a nisl.</p>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac laoreet augue, eu rutrum elit. Cras convallis eros a blandit mollis. Nulla facilisi. Morbi placerat molestie felis, nec.</p>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non.</p>
+					</ul>
+				</aside>
+			</div>
+		</div>	
+		<footer>
+			<address>
+				Dengxiao, SYST10199 Web Programming,Summer 2019 @ Sheridan College
+			</address>		
+		</footer><!-- footer -->
+		<script>
+			document.addEventListener("DOMContentLoaded", scrabble);
+		</script>
+
+  </body><!-- body -->
+</html>

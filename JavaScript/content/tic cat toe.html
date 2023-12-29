@@ -1,0 +1,133 @@
+<!DOCTYPE html>	
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tic Tac Toe</title>		
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/cats.css">
+		<link href="http://bajcar.dev.fast.sheridanc.on.ca/syst10199/checklists/css/grid_2019_6_4.css" rel="stylesheet">
+		<script src="../js/games.js"> </script>
+		<style>
+			table{
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			td, tr {
+				border: 1px solid black;
+			}
+
+			table {
+			 text-align: center;
+			}
+
+			td {
+				width:50px;
+				height: 50px;
+			}
+
+			table tr:first-child td
+			{
+				border-top: 1px white;  
+			}
+
+			table tr:last-child td
+			 {
+				border-bottom: 1px white;  
+			}
+
+			table tr td:last-child 
+			{
+				border-right:1px white;
+			}
+
+			table tr td:first-child 
+			{
+				border-left:1px white;
+			} 
+		</style>	
+		<!--
+		Author: 			Xiaohong Deng
+		Program: 		  tic cat toe.html		
+		Date:	
+		Updated:
+		Version: 			1.0
+		Purpose: 			short description what the page is all about
+		Citations:    [1] {url}, Course Material, SYST10199, Spring 2019
+									[2] {url} or APA format...
+		Description:	describe the solution in detail-focus on the "why"
+									Home page of the whole web project
+		-->
+  </head><!-- head -->
+  <body>
+    <header>
+			<h1>Gaming Cat's Clubhouse</h1>	
+			<hr>			
+		</header><!-- header -->
+		<!--NavigationBar -->
+		<div class="flex-tic1">
+			<div class="column" style="order: 1; flex-grow: 1">
+				<nav>
+					<nav>
+					<button><a href="../index.html">HOME</a></button>
+					<button><a href="tic cat toe.html">Tic CAT Toe</a></button>
+					<button><a href="casino craps.html">CATsino Craps</a></button>
+					<button><a href="cat paper rock.html">CAT Paper Rock</a></button>
+					<button><a href="cat scrabble.html">CAT Scrabble</a></button>
+				</nav>
+				</nav>
+			</div>
+			<div class="column" style="order: 2; flex-grow: 3">
+				<main>
+						<h2>Play &mdash; Tic Tac Toe</h2>
+						<div class="grid-container">
+							<div class="grid-item">
+							<table id="playground">
+								<tbody>
+									<tr>
+										 <td id="cell1">O</td>
+										 <td id="cell2">X</td>
+										 <td id="cell3">O</td>
+									</tr>
+									<tr>
+										 <td id="cell4">O</td>
+										 <td id="cell5">X</td>
+										 <td id="cell6">O</td>
+									</tr>
+									<tr>
+										 <td id="cell7">O</td>
+										 <td id="cell8">X</td>
+										 <td id="cell9">X</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							<div class="grid-item">
+							<button id="greset">Reset game</button>	
+							<h2 id="message"></h2>                   
+<!-- 							<h2 id="message"></h2>  -->
+							</div>
+						</div>			
+				</main>
+			</div>
+			<div class="column" style="order: 3; flex-grow: 1">
+				<aside>
+					<ul>How to play
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu sapien quam. Duis molestie urna vel libero pulvinar eleifend. Etiam molestie mi at nulla consequat, sed sollicitudin ante laoreet. Nunc.</p>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula id ante blandit placerat in a nisl.</p>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac laoreet augue, eu rutrum elit. Cras convallis eros a blandit mollis. Nulla facilisi. Morbi placerat molestie felis, nec.</p>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non.</p>
+					</ul>
+				</aside>
+			</div>
+		</div>	
+		<footer>
+			<address>
+				Dengxiao, SYST10199 Web Programming,Summer 2019 @ Sheridan College
+			</address>		
+		</footer><!-- footer -->
+		<script>
+			document.addEventListener("DOMContentLoaded", tictactoe);
+		</script>
+  </body><!-- body -->
+</html>
